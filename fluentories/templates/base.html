@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/logo2.png') }}">
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JavaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Fluentory</title>
+</head>
+
+<body>
+    <!-- Navbar for Small Screens (Offcanvas) -->
+    <nav class="navbar bg-nav navbar-dark fixed-top d-lg-none">
+        <div class="container-fluid">
+
+            <!-- Brand on the left -->
+            <h1 class="navbar-brand">FLUENTORY</h1>
+
+            <!-- Toggle on the right -->
+            <button class="navbar-toggler me-2" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarMobile" aria-controls="offcanvasNavbarMobile">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasNavbarMobile"
+                aria-labelledby="offcanvasNavbarMobileLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarMobileLabel">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href='{{url_for("core.index")}}'>HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href='{{url_for("core.appointments")}}'>APPOINTMENT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">REGISTER</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navbar for Large Screens -->
+    <nav class="navbar navbar-expand-lg nav-bg navbar-dark fixed-top d-none d-lg-flex">
+        <div class="container-fluid">
+            <!-- Brand on the left -->
+            <h1 class="navbar-brand">FLUENTORY</h1>
+            <!-- Menu items on the left -->
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item"><a class="nav-link" href='{{url_for("core.index")}}'>HOME</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">ABOUT</a></li>
+                <li class="nav-item"><a class="nav-link" href='{{url_for("core.appointments")}}'>APPOINTMENT</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">REGISTER</a></li>
+            </ul>
+        </div>
+    </nav>
+<div class="container mt-2">
+  {% block content %}
+  {% endblock %}
+</div>
+
+
+
+<!-- footer -->
+  <footer class="footer-bg text-white pt-4 pb-2 ">
+    <!-- container text center bootstrab -->
+    <div class="container text-center">
+      <h5 class="mb-3">Fluentories</h5>
+      <p>A learning platform designed to help you improve your English skills in an academic and engaging way.</p>
+
+      <div class="d-flex justify-content-center gap-4 mb-3">
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/1234567890?text=Hi,%20I'm%20interested%20in%20joining%20the%20Fluentories%20course"
+          target="_blank" title="WhatsApp">
+          <img src="{{ url_for('static', filename='images/whatsapp_icon.png') }}" alt="WhatsApp" width="32" height="32">
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/fluentories?igsh=MWRtdnBnMmdqdHVneg%3D%3D&utm_source=qr" target="_blank"
+          title="Instagram" style="margin: 0 8px;">
+          <img src="{{ url_for('static', filename='images/instagram_icon.png') }}" alt="Instagram" width="32"
+            height="32">
+        </a>
+
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/share/1Hm9REojN9/?mibextid=wwXIfr" target="_blank" title="Facebook"
+          style="margin: 0 8px;">
+          <img src="{{ url_for('static', filename='images/facebook_icon.png') }}" alt="Facebook" width="32" height="32">
+        </a>
+
+        <!-- Tiktok -->
+        <a href="https://www.tiktok.com/@fluentories?_t=ZS-8y6bt361DJ1&_r=1" target="_blank" title="Tiktok"
+          style="margin: 0 8px;">
+          <img src="{{ url_for('static', filename='images/tiktok_icon.png') }}" alt="Tiktok" width="32" height="32">
+        </a>
+
+      </div>
+
+      <small>© 2025 All rights reserved – Fluentories</small>
+    </div>
+  </footer>
+<script>
+    setTimeout(function () {
+      const flashMessages = document.getElementById('flash-messages');
+      if (flashMessages) {
+        flashMessages.style.transition = "opacity 0.5s ease-out";
+        flashMessages.style.opacity = 0;
+        setTimeout(() => flashMessages.remove(), 500);  // remove from DOM after fade
+      }
+    }, 5000);
+  </script>
+</body>
+
+</html>
