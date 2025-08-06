@@ -2,84 +2,96 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/logo2.png') }}">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/logo.png') }}">
 
-    <!-- custom CSS -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <!-- custom CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Bootstrap JavaScript-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap JavaScript-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 
-    <title>Fluentory</title>
+  <title>Fluentory</title>
 </head>
 
 <body>
-    <!-- Navbar for Small Screens (Offcanvas) -->
-    <nav class="navbar nav-bg navbar-dark fixed-top d-lg-none">
-        <div class="container-fluid">
+  <!-- Navbar for Small Screens (Offcanvas) -->
+  <nav class="navbar nav-bg navbar-dark fixed-top d-lg-none">
+    <div class="container-fluid">
 
-            <!-- Brand on the left -->
-            <h1 class="navbar-brand">FLUENTORY</h1>
+      <!-- Brand on the left -->
+      <h1 class="navbar-brand">FLUENTORY</h1>
 
-            <!-- Toggle on the right -->
-            <button class="navbar-toggler me-2" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasNavbarMobile" aria-controls="offcanvasNavbarMobile">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+      <!-- Toggle on the right -->
+      <button class="navbar-toggler me-2" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbarMobile" aria-controls="offcanvasNavbarMobile">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-            <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasNavbarMobile"
-                aria-labelledby="offcanvasNavbarMobileLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarMobileLabel">Menu</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href='{{url_for("core.index")}}'>HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">ABOUT</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href='{{url_for("core.appointments")}}'>APPOINTMENT</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">REGISTER</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasNavbarMobile"
+        aria-labelledby="offcanvasNavbarMobileLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarMobileLabel">Menu</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
         </div>
-    </nav>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href='{{url_for("core.index")}}'>HOME</a>
+            </li>
 
-    <!-- Navbar for Large Screens -->
-    <nav class="navbar navbar-expand-lg nav-bg navbar-dark fixed-top d-none d-lg-flex">
-        <div class="container-fluid">
-            <!-- Brand on the left -->
-            <h1 class="navbar-brand">FLUENTORY</h1>
-            <!-- Menu items on the left -->
-            <ul class="navbar-nav me-auto">
-                <li class="nav-item"><a class="nav-link" href='{{url_for("core.index")}}'>HOME</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">ABOUT</a></li>
-                <li class="nav-item"><a class="nav-link" href='{{url_for("core.appointments")}}'>APPOINTMENT</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">REGISTER</a></li>
-            </ul>
+            <li class="nav-item">
+              <a class="nav-link" href='{{url_for("core.appointments")}}'>APPOINTMENT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href='{{url_for("core.register")}}'>REGISTER</a>
+            </li>
+          </ul>
         </div>
-    </nav>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Navbar for Large Screens -->
+  <nav class="navbar navbar-expand-lg nav-bg navbar-dark fixed-top d-none d-lg-flex">
+    <div class="container-fluid">
+      <!-- Brand on the left -->
+      <h1 class="navbar-brand">FLUENTORY</h1>
+      <!-- Menu items on the left -->
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href='{{url_for("core.index")}}'>HOME</a></li>
+        <li class="nav-item"><a class="nav-link" href='{{url_for("core.appointments")}}'>APPOINTMENT</a></li>
+        <li class="nav-item"><a class="nav-link" href='{{url_for("core.register")}}'>REGISTER</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Flash messages (just under navbar) -->
+  <div class="flash-wrapper">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+    {% for category, message in messages %}
+    <div class="alert alert-{{ category }} alert-dismissible fade show shadow" role="alert">
+      {{ message }}
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
+  </div>
+
   {% block content %}
   {% endblock %}
 
-<!-- footer -->
-  <footer class="footer-bg text-white pt-4 pb-2 ">
+  <!-- footer -->
+  <footer class="footer-bg text-white pt-4 pb-2">
     <!-- container text center bootstrab -->
     <div class="container text-center">
       <h5 class="mb-3">Fluentories</h5>
@@ -117,16 +129,20 @@
       <small>© 2025 All rights reserved – Fluentories</small>
     </div>
   </footer>
-<script>
+  <script>
     setTimeout(function () {
-      const flashMessages = document.getElementById('flash-messages');
-      if (flashMessages) {
-        flashMessages.style.transition = "opacity 0.5s ease-out";
-        flashMessages.style.opacity = 0;
-        setTimeout(() => flashMessages.remove(), 500);  // remove from DOM after fade
-      }
+      const flashes = document.querySelectorAll('.custom-flash, .alert');
+      flashes.forEach(el => el.classList.add('fade-out'));
     }, 5000);
   </script>
+
+  <style>
+    .fade-out {
+      opacity: 0;
+      transition: opacity 1s ease-out;
+    }
+  </style>
+
 </body>
 
 </html>

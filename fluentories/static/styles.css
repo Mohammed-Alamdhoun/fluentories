@@ -1,8 +1,6 @@
-body {
-  padding-top: 50px;
-  background: linear-gradient(to bottom, #192533, #415a77);
-  color: #dddeda;
-}
+/* ========================================= */
+/* ============= 1. Form Styling =========== */
+/* ========================================= */
 
 /* Form Container */
 .custom-form-container {
@@ -64,8 +62,28 @@ body {
   outline: none;
 }
 
+/* Date Picker */
 input[type="date"]::-webkit-calendar-picker-indicator {
   filter: brightness(0) invert(1);
+}
+
+input[type="date"] {
+  color-scheme: dark;
+}
+
+input[type="time"] {
+  color-scheme: dark;
+}
+
+input[type="time"]::placeholder {
+  opacity: 1;
+}
+
+select.form-select {
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='gray' class='bi bi-caret-down-fill' viewBox='0 0 16 16'%3e%3cpath d='M7.247 11.14 2.451 5.658A.5.5 0 0 1 2.88 5h10.24a.5.5 0 0 1 .429.758l-4.796 5.482a.5.5 0 0 1-.756 0z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1rem;
 }
 
 /* Submit Button */
@@ -85,62 +103,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   box-shadow: 0 0 25px #415a77 !important;
 }
 
-/* Footer */
-.footer-bg {
-  background-color: transparent !important;
-  color: white;
-  padding: 40px 20px;
-}
-
-/* Navbar */
-.nav-bg,
-.navbar-bg-s {
-  background-color: #0d1b2a !important;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
-}
-
 /* Error Message */
 .text-danger {
   margin-top: 5px;
   font-size: 20px;
 }
 
-/* Responsive Improvements */
-@media (max-width: 770px) {
-  .custom-form-container {
-    padding: 20px;
-  }
+/* ========================================= */
+/* ============ 2. Hero Section ============ */
+/* ========================================= */
 
-  .custom-form-container {
-    padding: 20px;
-  }
-  .custom-form-container {
-    padding: 20px;
-  }
-
-  .form-label {
-    font-size: 1.1em;
-  }
-
-  .form-control,
-  .form-select,
-  .form-control-note {
-    font-size: 15px;
-    padding: 8px 10px;
-  }
-  .bghome-1{
-    background-attachment: scroll;
-    min-height: 400px;
-    font-size: 20px;
-  }
-}
-
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-/* //////////////////////////////////
-//////////////////////////////////
-///////////////////////////////// */
 .bghome-1 {
   background-attachment: fixed;
   background-position: center;
@@ -148,32 +120,34 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background-size: cover;
   text-align: center;
   color: #dddeda;
-  background:#3c556f;
-  min-height: 100%;
+  background: #3c556f;
+  min-height: 100vh;
+  padding-top: 100px;
   font-size: 44px;
+}
+
+.hero-text-wrapper {
+  white-space: nowrap;
+  padding-top: 60px;
 }
 
 .w3-wide {
   letter-spacing: 10px;
 }
 
-/* Large screens (default) - font-size: 34px */
-
-/* Medium screens (<= 700px) */
+/* Responsive Font Size for .bghome-1 */
 @media only screen and (max-width: 700px) {
   .bghome-1 {
-    font-size: 34px; /* Medium font */
+    font-size: 34px;
   }
 }
 
-/* Small screens (<= 500px) */
 @media only screen and (max-width: 500px) {
   .bghome-1 {
-    font-size: 26px; /* Small font */
+    font-size: 26px;
   }
 }
 
-/* Optional: override background-attachment for devices */
 @media only screen and (max-device-width: 3000px) {
   .bghome-1 {
     background-attachment: scroll;
@@ -181,35 +155,80 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   }
 }
 
+/* ========================================= */
+/* ============ 3. Navbar Styling ========== */
+/* ========================================= */
+
+.nav-bg,
+.navbar-bg-s {
+  background-color: #0d1b2a !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* ========================================= */
+/* ============= 4. Footer ================= */
+/* ========================================= */
+
+.footer-bg {
+  background-color: #6c87a1 !important;
+  color: white;
+  padding: 40px 20px;
+}
+
+/* ========================================= */
+/* =========== 5. What We Offer ============ */
+/* ========================================= */
+
 .offer-section {
-background-color: rgb(227, 134, 13);
+  background-color: #37495a;
+  color: #dddeda;
 }
 
 .offer-section img {
   max-height: 400px;
   object-fit: cover;
 }
-/* ////////////////////////////////////////// */
-/* ////////////// what we offer /////////////*/
-/* /////////////////////////////////////////*/
 
 .custom-hr {
   width: 30%;
   height: 10px;
-  background-color: #0e1b2a; /* Adjust as needed */
+  background-color: #0e1b2a;
   border: none;
-  margin: 0 auto 40px auto; /* Top: 0, Bottom: 40px */
+  margin: 0 auto 40px auto;
   display: block;
 }
 
-/* Custom background colors */
-.bg-about { background-color: #dddeda; }
-.bg-offer { background-color: #dddeda; }
-.bg-offer-1 { background-color: #6c87a1; }
-.bg-offer-2 { background-color: #3b5675; }
-.bg-offer-3 { background-color: #1c2a3a; }
-.bg-offer-4 { background-color: #0e1b2a; }
-/* Box styling */
+/* Backgrounds */
+.bg-about {
+  background-color: #dddeda;
+  box-shadow: 0 -6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.bg-offer {
+  background-color: #dddeda;
+}
+
+.bg-offer-1 {
+  background-color: #6c87a1;
+}
+
+.bg-offer-2 {
+  background-color: #3b5675;
+}
+
+.bg-offer-3 {
+  background-color: #1c2a3a;
+}
+
+.bg-offer-4 {
+  background-color: #0e1b2a;
+}
+
+/* Offer Box Styling */
 .offer-box {
   font-size: 0.95rem;
   line-height: 1.4;
@@ -217,23 +236,30 @@ background-color: rgb(227, 134, 13);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* Hover effect */
 .offer-box-hover:hover {
   transform: scale(1.03);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
 
-/* ////////////////////////////////////////// */
-/* ////////////// why different /////////////*/
-/* /////////////////////////////////////////*/
+/* ========================================= */
+/* ========= 6. Why We're Different ======== */
+/* ========================================= */
+
 .why-different-section {
-  background-color: #37495a; /* a midpoint gray-blue that gives warmth and readability */
-}
-.why-different-section p {
-  color: #e5e5e5 !important; /* Slightly brighter than your base */
+  background-color: #37495a;
 }
 
+.why-different-section h2 {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.why-different-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #e5e5e5 !important;
+}
 
 .why-panel {
   background: #0e1b2a;
@@ -248,21 +274,9 @@ background-color: rgb(227, 134, 13);
   cursor: default;
 }
 
-.why-different-section h2 {
-  font-size: 2rem;
-  color: #ffffff;
-}
-
-.why-different-section p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-}
-
-
-/* ////////////////////////////////////////// */
-/* //////// What Are You Waiting For ////////*/
-/* /////////////////////////////////////////*/
-
+/* ========================================= */
+/* ====== 7. What Are You Waiting For ====== */
+/* ========================================= */
 
 .cta-section {
   background: linear-gradient(to right, #dddeda, #6c87a1);
@@ -270,8 +284,7 @@ background-color: rgb(227, 134, 13);
   padding: 80px 20px;
   position: relative;
   z-index: 1;
-    box-shadow: 0 -12px 20px rgba(0, 0, 0, 0.3), 0 12px 20px rgba(0, 0, 0, 0.3);
-
+  box-shadow: 0 -12px 20px rgba(0, 0, 0, 0.3), 0 12px 20px rgba(0, 0, 0, 0.3);
 }
 
 .cta-heading {
@@ -285,7 +298,6 @@ background-color: rgb(227, 134, 13);
   color: black;
 }
 
-/* CTA Button */
 .btn-cta {
   padding: 14px 36px;
   font-size: 1.1rem;
@@ -304,7 +316,6 @@ background-color: rgb(227, 134, 13);
   transform: scale(1.05);
 }
 
-/* Entrance Animation */
 .animate-cta {
   animation: bounceIn 1.2s ease forwards;
 }
@@ -321,4 +332,18 @@ background-color: rgb(227, 134, 13);
   100% {
     transform: scale(1);
   }
+}
+
+/* ========================================= */
+/* =========== 8. Flash Messages =========== */
+/* ========================================= */
+
+.flash-wrapper {
+  position: fixed;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1050;
+  width: 90%;
+  max-width: 800px;
 }

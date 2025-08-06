@@ -1,6 +1,6 @@
 from wtforms import (StringField, DateField, 
                      SubmitField, EmailField,
-                     SelectField, TextAreaField)
+                     SelectField, TextAreaField, TimeField)
 from flask_wtf import FlaskForm
 from wtforms.validators import DataRequired, Length
 
@@ -11,6 +11,7 @@ class AppointmentForm(FlaskForm):
     email = EmailField('Email', validators=[DataRequired(), Length(max=120)])
     phone = StringField('Phone', validators=[DataRequired(), Length(max=15)])
     date = DateField('Appointment Date', format='%Y-%m-%d', validators=[DataRequired()])
+    time = TimeField('Time', validators=[DataRequired()], format='%H:%M')
     how_heard = SelectField('How Did You Hear About Us', choices=[
         ('', ' Select'),
         ('friend', 'Friend'),

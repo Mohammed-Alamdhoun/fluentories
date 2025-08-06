@@ -3,7 +3,7 @@ from fluentories import db
 from fluentories.forms.appointment_form import AppointmentForm
 from fluentories.forms.register_form import RegisterForm
 from fluentories.models import Appointment, Registeration
-from fluentories.services.send_email import send_email
+from fluentories.services.send_email import send_email, send_email_to_user
 
 routes = Blueprint('core', __name__)  # Unified blueprint
 
@@ -28,6 +28,7 @@ def appointments():
             email=form.email.data,
             phone=form.phone.data,
             date=form.date.data,
+            time= form.time.data,
             notes=form.notes.data,
             how_heard=form.how_heard.data
         )
@@ -35,7 +36,7 @@ def appointments():
         db.session.commit()
 
         # Email Body
-        subject = f"📌 New Appointment Scheduled: {appointment.first_name} {appointment.last_name}"
+        subject = "Appointment"
         body = f"""
 👤 Name: {appointment.first_name} {appointment.last_name}
 
@@ -43,14 +44,14 @@ def appointments():
 
 ☎️ Phone: {appointment.phone}
 
-📅 Date: {appointment.date.strftime('%Y-%m-%d')}
+📅 Date: {appointment.date.strftime('%Y-%m-%d')} at {appointment.time.strftime('%H:%M')}
 
 📣 How They Heard About Us: {appointment.how_heard}
 
 {"🧾 Notes:" if appointment.notes else ""}{appointment.notes if appointment.notes else 'No additional notes were provided.'}
         """
         send_email(subject, body)
-
+        send_email_to_user(subject, appointment.email)
         flash('Appointment created successfully!', 'success')
         return redirect(url_for('core.index'))
 
@@ -78,8 +79,7 @@ def register():
 
         db.session.add(registration)
         db.session.commit()
-
-        subject = f"New Registration: {registration.first_name} {registration.last_name}"
+        subject = "Registration"
         body = f"""
 👤 Name: {registration.first_name} {registration.last_name}
 
@@ -96,6 +96,7 @@ def register():
 🕒 Available on {registration.availability_time}
         """
         send_email(subject, body)
+        send_email_to_user(subject, registration.email)
 
         flash('Registration successful!', 'success')
         return redirect(url_for('core.index'))

@@ -8,7 +8,7 @@ migrate = Migrate()
 
 def create_app():
     app = Flask(__name__)
-    app.config['SECRET_KEY'] = 'mysecret'
+    app.config['SECRET_KEY'] = os.getenv("SECRET_KEY")
 
     basedir = os.path.abspath(os.path.dirname(__file__))
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'database.db')

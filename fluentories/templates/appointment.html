@@ -3,7 +3,7 @@
 <div class="bg-wrapper d-flex justify-content-center align-items-center min-vh-100 custom-form-container">
   <div class="w-100 " style="max-width: 600px;">
     <h1 class="text-center my-4">Appointment Form</h1>
-    <form>
+    <form method="POST">
       {{ form.hidden_tag() }}
 
       <div class="mb-3">
@@ -32,12 +32,18 @@
       </div>
 
       <div class="mb-3">
+        {{ form.time.label(class="form-label") }}
+        {{ form.time(class="form-control", autocomplete="off") }}
+      </div>
+
+
+      <div class="mb-3">
         {{ form.how_heard.label(class="form-label") }}
         {{ form.how_heard(class="form-select", placeholder="How did you hear about us?") }}
         {% if form.how_heard.errors %}
-          {% for error in form.how_heard.errors %}
-            <div class="text-danger">{{ error }}</div>
-          {% endfor %}
+        {% for error in form.how_heard.errors %}
+        <div class="text-danger">{{ error }}</div>
+        {% endfor %}
         {% endif %}
       </div>
 
