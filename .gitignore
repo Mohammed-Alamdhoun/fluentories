@@ -1,0 +1,14 @@
+# Ignore environment variables
+.env
+
+# Ignore virtual environments
+flask_env/
+
+# Ignore compiled Python files
+__pycache__/
+*.py[cod]
+
+
+# Ignore SQLite DB (optional if you don't want to track DB file)
+fluentories/database.db
+migrations/
