@@ -1,0 +1,306 @@
+# Translations template for PROJECT.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-08-08 23:08+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: fluentories/templates/appointment.html:5
+msgid "Appointment Form"
+msgstr ""
+
+#: fluentories/templates/appointment.html:10
+#: fluentories/templates/register.html:10
+msgid "First Name"
+msgstr ""
+
+#: fluentories/templates/appointment.html:11
+#: fluentories/templates/register.html:11
+msgid "Enter your first name"
+msgstr ""
+
+#: fluentories/templates/appointment.html:15
+#: fluentories/templates/register.html:15
+msgid "Last Name"
+msgstr ""
+
+#: fluentories/templates/appointment.html:16
+#: fluentories/templates/register.html:16
+msgid "Enter your last name"
+msgstr ""
+
+#: fluentories/templates/appointment.html:20
+#: fluentories/templates/register.html:20
+msgid "Email"
+msgstr ""
+
+#: fluentories/templates/appointment.html:21
+#: fluentories/templates/register.html:21
+msgid "Enter your email address"
+msgstr ""
+
+#: fluentories/templates/appointment.html:25
+#: fluentories/templates/register.html:30
+msgid "Phone Number"
+msgstr ""
+
+#: fluentories/templates/appointment.html:26
+#: fluentories/templates/register.html:31
+msgid "Enter your phone number"
+msgstr ""
+
+#: fluentories/templates/appointment.html:30
+msgid "Appointment Date"
+msgstr ""
+
+#: fluentories/templates/appointment.html:35
+msgid "Appointment Time"
+msgstr ""
+
+#: fluentories/templates/appointment.html:40
+#: fluentories/templates/register.html:43
+msgid "How did you hear about us?"
+msgstr ""
+
+#: fluentories/templates/appointment.html:48
+msgid "Additional Notes"
+msgstr ""
+
+#: fluentories/templates/appointment.html:49
+msgid "Additional notes"
+msgstr ""
+
+#: fluentories/templates/appointment.html:53
+msgid "Book Appointment"
+msgstr ""
+
+#: fluentories/templates/base.html:39
+msgid "Menu"
+msgstr ""
+
+#: fluentories/templates/base.html:46 fluentories/templates/base.html:76
+msgid "HOME"
+msgstr ""
+
+#: fluentories/templates/base.html:49 fluentories/templates/base.html:77
+msgid "APPOINTMENT"
+msgstr ""
+
+#: fluentories/templates/base.html:52 fluentories/templates/base.html:79
+msgid "REGISTER"
+msgstr ""
+
+#: fluentories/templates/base.html:59 fluentories/templates/base.html:85
+msgid "Language"
+msgstr ""
+
+#: fluentories/templates/index.html:15
+msgid "About Fluentory"
+msgstr ""
+
+#: fluentories/templates/index.html:17
+msgid ""
+"Fluentory is a skills-focused language platform built to boost real-world"
+" confidence through\n"
+"                    practical, grammar-light learning. Founded in Amman "
+"in 2020, it offers personalized coaching, resume\n"
+"                    support, mock interviews, and more, all designed to "
+"prepare learners for global success. While we\n"
+"                    began with Business English, Fluentories is expanding"
+" to include other languages soon, because\n"
+"                    communication shouldn't have borders."
+msgstr ""
+
+#: fluentories/templates/index.html:35
+msgid "What We Offer You"
+msgstr ""
+
+#: fluentories/templates/index.html:37
+msgid ""
+"Business English Courses\n"
+"                        Build professional fluency for interviews, "
+"meetings, and global careers with a practical,\n"
+"                        grammar-light approach."
+msgstr ""
+
+#: fluentories/templates/index.html:41
+msgid ""
+"Kids’ Public Speaking Programs\n"
+"                        Develop children's confidence, communication, and"
+" presentation skills through fun, interactive\n"
+"                        training."
+msgstr ""
+
+#: fluentories/templates/index.html:45
+msgid ""
+"1-on-1 Language Coaching\n"
+"                        Personalized sessions tailored to your specific "
+"goals—whether for career growth, education, or\n"
+"                        public speaking."
+msgstr ""
+
+#: fluentories/templates/index.html:49
+msgid ""
+"Resume & Interview Preparation\n"
+"                        Sharpen your professional profile with expert CV "
+"feedback and mock interviews designed for\n"
+"                        real-world success."
+msgstr ""
+
+#: fluentories/templates/index.html:53
+msgid ""
+"Multilingual Courses (Coming Soon)\n"
+"                        Fluentories is expanding to offer courses in new "
+"languages—because effective communication goes\n"
+"                        beyond English."
+msgstr ""
+
+#: fluentories/templates/index.html:73
+msgid "What We Offer"
+msgstr ""
+
+#: fluentories/templates/index.html:79
+msgid "Vocabulary & Communication"
+msgstr ""
+
+#: fluentories/templates/index.html:81
+msgid ""
+"We provide you with a 500-word booklet full of workplace expressions and "
+"phrases, helping\n"
+"                        you\n"
+"                        speak naturally, improve your fluency, and "
+"communicate confidently in real-world professional\n"
+"                        environments."
+msgstr ""
+
+#: fluentories/templates/index.html:90
+msgid "Career-Focused Learning"
+msgstr ""
+
+#: fluentories/templates/index.html:92
+msgid ""
+"You’ll receive curated recommendations for free, high-impact courses that"
+" align with your\n"
+"                        career\n"
+"                        goals — helping you strengthen both your "
+"technical and soft skills to stand out in the job\n"
+"                        market."
+msgstr ""
+
+#: fluentories/templates/index.html:102
+msgid "Interview Preparation"
+msgstr ""
+
+#: fluentories/templates/index.html:104
+msgid ""
+"We simulate real job interviews based on the company and position you’re "
+"targeting, then\n"
+"                        give\n"
+"                        you actionable feedback to improve your answers, "
+"body language, and confidence before the real\n"
+"                        thing."
+msgstr ""
+
+#: fluentories/templates/index.html:113
+msgid "CV Optimization"
+msgstr ""
+
+#: fluentories/templates/index.html:115
+msgid ""
+"Your CV is your first impression — we help you structure it "
+"professionally, refine the\n"
+"                        language,\n"
+"                        highlight key strengths, and make sure it’s "
+"clear, polished, and completely free from\n"
+"                        mistakes."
+msgstr ""
+
+#: fluentories/templates/index.html:133
+msgid "Why We’re Different"
+msgstr ""
+
+#: fluentories/templates/index.html:135
+msgid ""
+"At Fluentories, we don’t rely on recycled methods or outdated grammar "
+"drills. Our\n"
+"                    approach is modern, engaging, and tailored to your "
+"goals. By the end of our program, you will speak\n"
+"                    fluently and confidently — even with an American "
+"accent — and yes, without memorizing grammar\n"
+"                    rules."
+msgstr ""
+
+#: fluentories/templates/index.html:142
+msgid ""
+"We personalize every learner’s journey through one-on-one coaching,\n"
+"                    practical simulations, and constant feedback. Whether"
+" you're\n"
+"                    aiming for a job interview or international "
+"collaboration, we ensure your communication skills are\n"
+"                    career-ready."
+msgstr ""
+
+#: fluentories/templates/index.html:155
+msgid "No more grammar memorization."
+msgstr ""
+
+#: fluentories/templates/index.html:155
+msgid ""
+"Just real,\n"
+"                        fluent results."
+msgstr ""
+
+#: fluentories/templates/index.html:167
+msgid "What Are You Waiting For?"
+msgstr ""
+
+#: fluentories/templates/index.html:168
+msgid ""
+"Join Fluentories today and start your journey to confident, career-ready\n"
+"            English."
+msgstr ""
+
+#: fluentories/templates/index.html:172
+msgid "Register Now"
+msgstr ""
+
+#: fluentories/templates/register.html:5
+msgid "Registration Form"
+msgstr ""
+
+#: fluentories/templates/register.html:25
+msgid "Age"
+msgstr ""
+
+#: fluentories/templates/register.html:26
+msgid "Enter your age"
+msgstr ""
+
+#: fluentories/templates/register.html:35
+msgid "Academic Level"
+msgstr ""
+
+#: fluentories/templates/register.html:51
+msgid "Availability Date"
+msgstr ""
+
+#: fluentories/templates/register.html:52
+msgid "YYYY-MM-DD"
+msgstr ""
+
+#: fluentories/templates/register.html:56
+msgid "Register"
+msgstr ""
+

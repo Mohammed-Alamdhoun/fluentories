@@ -1,0 +1,334 @@
+
+# Arabic translations for PROJECT.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-08-08 23:08+0300\n"
+"PO-Revision-Date: 2025-08-08 23:12+0300\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ar\n"
+"Language-Team: ar <LL@li.org>\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : "
+"n%100>=3 && n%100<=10 ? 3 : n%100>=0 && n%100<=2 ? 4 : 5);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: fluentories/templates/appointment.html:5
+msgid "Appointment Form"
+msgstr "نموذج حجز موعد"
+
+#: fluentories/templates/appointment.html:10
+#: fluentories/templates/register.html:10
+msgid "First Name"
+msgstr "الاسم الأول"
+
+#: fluentories/templates/appointment.html:11
+#: fluentories/templates/register.html:11
+msgid "Enter your first name"
+msgstr "أدخل اسمك الأول"
+
+#: fluentories/templates/appointment.html:15
+#: fluentories/templates/register.html:15
+msgid "Last Name"
+msgstr "اسم العائلة"
+
+#: fluentories/templates/appointment.html:16
+#: fluentories/templates/register.html:16
+msgid "Enter your last name"
+msgstr "أدخل اسم العائلة"
+
+#: fluentories/templates/appointment.html:20
+#: fluentories/templates/register.html:20
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+#: fluentories/templates/appointment.html:21
+#: fluentories/templates/register.html:21
+msgid "Enter your email address"
+msgstr "أدخل بريدك الإلكتروني"
+
+#: fluentories/templates/appointment.html:25
+#: fluentories/templates/register.html:30
+msgid "Phone Number"
+msgstr "رقم الهاتف"
+
+#: fluentories/templates/appointment.html:26
+#: fluentories/templates/register.html:31
+msgid "Enter your phone number"
+msgstr "أدخل رقم هاتفك"
+
+#: fluentories/templates/appointment.html:30
+msgid "Appointment Date"
+msgstr "تاريخ الموعد"
+
+#: fluentories/templates/appointment.html:35
+msgid "Appointment Time"
+msgstr "وقت الموعد"
+
+#: fluentories/templates/appointment.html:40
+#: fluentories/templates/register.html:43
+msgid "How did you hear about us?"
+msgstr "كيف سمعت عنا؟"
+
+#: fluentories/templates/appointment.html:48
+msgid "Additional Notes"
+msgstr "ملاحظات إضافية"
+
+#: fluentories/templates/appointment.html:49
+msgid "Additional notes"
+msgstr "ملاحظات إضافية"
+
+#: fluentories/templates/appointment.html:53
+msgid "Book Appointment"
+msgstr "احجز الموعد"
+
+#: fluentories/templates/base.html:39
+msgid "Menu"
+msgstr "القائمة"
+
+#: fluentories/templates/base.html:46 fluentories/templates/base.html:76
+msgid "HOME"
+msgstr "الرئيسية"
+
+#: fluentories/templates/base.html:49 fluentories/templates/base.html:77
+msgid "APPOINTMENT"
+msgstr "حجز موعد"
+
+#: fluentories/templates/base.html:52 fluentories/templates/base.html:79
+msgid "REGISTER"
+msgstr "التسجيل"
+
+#: fluentories/templates/base.html:59 fluentories/templates/base.html:85
+msgid "Language"
+msgstr "اللغة"
+
+#: fluentories/templates/index.html:15
+msgid "About Fluentory"
+msgstr "عن Fluentory"
+
+#: fluentories/templates/index.html:17
+msgid ""
+"Fluentory is a skills-focused language platform built to boost real-world"
+" confidence through\n"
+"                    practical, grammar-light learning. Founded in Amman "
+"in 2020, it offers personalized coaching, resume\n"
+"                    support, mock interviews, and more, all designed to "
+"prepare learners for global success. While we\n"
+"                    began with Business English, Fluentories is expanding"
+" to include other languages soon, because\n"
+"                    communication shouldn't have borders."
+msgstr ""
+"فلونتوري هي منصة لغات تركز على المهارات، صُممت لتعزيز الثقة في الحياة الواقعية من خلال التعلم العملي الخفيف على القواعد. "
+"تأسست في عمّان عام 2020، وتقدم تدريباً شخصياً، دعم في إعداد السيرة الذاتية، مقابلات تجريبية، والمزيد، "
+"وكلها تهدف إلى إعداد المتعلمين للنجاح العالمي. بدأنا باللغة الإنجليزية للأعمال، ونعمل على التوسع لتشمل لغات أخرى قريباً، "
+"لأن التواصل لا يجب أن تكون له حدود."
+
+#: fluentories/templates/index.html:35
+msgid "What We Offer You"
+msgstr "ما الذي نقدمه لك"
+
+#: fluentories/templates/index.html:37
+msgid ""
+"Business English Courses\n"
+"                        Build professional fluency for interviews, "
+"meetings, and global careers with a practical,\n"
+"                        grammar-light approach."
+msgstr ""
+"دورات الإنجليزية للأعمال\n"
+"بناء طلاقة مهنية للمقابلات والاجتماعات والوظائف العالمية باستخدام نهج عملي وخفيف على القواعد."
+
+#: fluentories/templates/index.html:41
+msgid ""
+"Kids’ Public Speaking Programs\n"
+"                        Develop children's confidence, communication, and"
+" presentation skills through fun, interactive\n"
+"                        training."
+msgstr ""
+"برامج التحدث أمام الجمهور للأطفال\n"
+"تطوير ثقة الأطفال ومهارات التواصل والعرض التقديمي من خلال تدريب ممتع وتفاعلي."
+
+#: fluentories/templates/index.html:45
+msgid ""
+"1-on-1 Language Coaching\n"
+"                        Personalized sessions tailored to your specific "
+"goals—whether for career growth, education, or\n"
+"                        public speaking."
+msgstr ""
+"تدريب لغوي فردي (واحد لواحد)\n"
+"جلسات شخصية مصممة خصيصاً لأهدافك سواء للنمو المهني أو التعليم أو التحدث أمام الجمهور."
+
+#: fluentories/templates/index.html:49
+msgid ""
+"Resume & Interview Preparation\n"
+"                        Sharpen your professional profile with expert CV "
+"feedback and mock interviews designed for\n"
+"                        real-world success."
+msgstr ""
+"إعداد السيرة الذاتية والمقابلات\n"
+"تحسين ملفك المهني من خلال مراجعة احترافية للسيرة الذاتية ومقابلات تجريبية معدة للنجاح الواقعي."
+
+#: fluentories/templates/index.html:53
+msgid ""
+"Multilingual Courses (Coming Soon)\n"
+"                        Fluentories is expanding to offer courses in new "
+"languages—because effective communication goes\n"
+"                        beyond English."
+msgstr ""
+"دورات متعددة اللغات (قريباً)\n"
+"تعمل فلونتوري على التوسع لتقديم دورات بلغات جديدة — لأن التواصل الفعال يتجاوز اللغة الإنجليزية."
+
+#: fluentories/templates/index.html:73
+msgid "What We Offer"
+msgstr "ما نقدمه"
+
+#: fluentories/templates/index.html:79
+msgid "Vocabulary & Communication"
+msgstr "المفردات والتواصل"
+
+#: fluentories/templates/index.html:81
+msgid ""
+"We provide you with a 500-word booklet full of workplace expressions and "
+"phrases, helping\n"
+"                        you\n"
+"                        speak naturally, improve your fluency, and "
+"communicate confidently in real-world professional\n"
+"                        environments."
+msgstr ""
+"نقدم لك كتيباً يحتوي على 500 كلمة مليئة بالتعابير والعبارات المستخدمة في بيئة العمل، "
+"لمساعدتك على التحدث بطلاقة وبطبيعية والتواصل بثقة في بيئات العمل الواقعية."
+
+#: fluentories/templates/index.html:90
+msgid "Career-Focused Learning"
+msgstr "تعلم موجه نحو المسار المهني"
+
+#: fluentories/templates/index.html:92
+msgid ""
+"You’ll receive curated recommendations for free, high-impact courses that"
+" align with your\n"
+"                        career\n"
+"                        goals — helping you strengthen both your "
+"technical and soft skills to stand out in the job\n"
+"                        market."
+msgstr ""
+"ستتلقى توصيات منتقاة لدورات مجانية وفعالة تتماشى مع أهدافك المهنية — "
+"لمساعدتك على تعزيز مهاراتك التقنية والشخصية للتميز في سوق العمل."
+
+#: fluentories/templates/index.html:102
+msgid "Interview Preparation"
+msgstr "التحضير للمقابلات"
+
+#: fluentories/templates/index.html:104
+msgid ""
+"We simulate real job interviews based on the company and position you’re "
+"targeting, then\n"
+"                        give\n"
+"                        you actionable feedback to improve your answers, "
+"body language, and confidence before the real\n"
+"                        thing."
+msgstr ""
+"نحاكي مقابلات عمل حقيقية بناءً على الشركة والمنصب الذي تستهدفه، "
+"ثم نقدم لك ملاحظات عملية لتحسين إجاباتك، ولغة جسدك، وزيادة ثقتك قبل المقابلة الفعلية."
+
+#: fluentories/templates/index.html:113
+msgid "CV Optimization"
+msgstr "تحسين السيرة الذاتية"
+
+#: fluentories/templates/index.html:115
+msgid ""
+"Your CV is your first impression — we help you structure it "
+"professionally, refine the\n"
+"                        language,\n"
+"                        highlight key strengths, and make sure it’s "
+"clear, polished, and completely free from\n"
+"                        mistakes."
+msgstr ""
+"سيرتك الذاتية هي انطباعك الأول — نساعدك على تنظيمها بشكل احترافي، "
+"وتحسين لغتها، وإبراز نقاط قوتك الأساسية، وضمان أن تكون واضحة، مصقولة وخالية تماماً من الأخطاء."
+
+#: fluentories/templates/index.html:133
+msgid "Why We’re Different"
+msgstr "لماذا نحن مختلفون"
+
+#: fluentories/templates/index.html:135
+msgid ""
+"At Fluentories, we don’t rely on recycled methods or outdated grammar "
+"drills. Our\n"
+"                    approach is modern, engaging, and tailored to your "
+"goals. By the end of our program, you will speak\n"
+"                    fluently and confidently — even with an American "
+"accent — and yes, without memorizing grammar\n"
+"                    rules."
+msgstr ""
+"في فلونتوري، لا نعتمد على الأساليب المكررة أو تدريبات القواعد القديمة. "
+"نهجنا حديث وجذاب ومصمم وفقاً لأهدافك. بنهاية برنامجنا، ستتحدث بطلاقة وثقة — حتى بلكنة أمريكية — وبدون حفظ قواعد النحو."
+
+#: fluentories/templates/index.html:142
+msgid ""
+"We personalize every learner’s journey through one-on-one coaching,\n"
+"                    practical simulations, and constant feedback. Whether"
+" you're\n"
+"                    aiming for a job interview or international "
+"collaboration, we ensure your communication skills are\n"
+"                    career-ready."
+msgstr ""
+"نخصص رحلة كل متعلم من خلال تدريب فردي، ومحاكاة عملية، وتغذية راجعة مستمرة. "
+"سواء كنت تستهدف مقابلة عمل أو تعاوناً دولياً، نضمن أن تكون مهاراتك في التواصل جاهزة للمسار المهني."
+
+#: fluentories/templates/index.html:155
+msgid "No more grammar memorization."
+msgstr "لا مزيد من حفظ القواعد."
+
+#: fluentories/templates/index.html:155
+msgid ""
+"Just real,\n"
+"                        fluent results."
+msgstr "فقط نتائج حقيقية وطلاقة في التحدث."
+
+#: fluentories/templates/index.html:167
+msgid "What Are You Waiting For?"
+msgstr "ماذا تنتظر؟"
+
+#: fluentories/templates/index.html:168
+msgid ""
+"Join Fluentories today and start your journey to confident, career-ready\n"
+"            English."
+msgstr "انضم إلى فلونتوري اليوم وابدأ رحلتك نحو الإنجليزية الواثقة والمناسبة لمسارك المهني."
+
+#: fluentories/templates/index.html:172
+msgid "Register Now"
+msgstr "سجّل الآن"
+
+#: fluentories/templates/register.html:5
+msgid "Registration Form"
+msgstr "نموذج التسجيل"
+
+#: fluentories/templates/register.html:25
+msgid "Age"
+msgstr "العمر"
+
+#: fluentories/templates/register.html:26
+msgid "Enter your age"
+msgstr "أدخل عمرك"
+
+#: fluentories/templates/register.html:35
+msgid "Academic Level"
+msgstr "المستوى الأكاديمي"
+
+#: fluentories/templates/register.html:51
+msgid "Availability Date"
+msgstr "تاريخ التوفر"
+
+#: fluentories/templates/register.html:52
+msgid "YYYY-MM-DD"
+msgstr "YYYY-MM-DD"
+
+#: fluentories/templates/register.html:56
+msgid "Register"
+msgstr "تسجيل"

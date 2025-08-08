@@ -2,58 +2,58 @@
 {% block content %}
 <div class="bg-wrapper d-flex justify-content-center align-items-center min-vh-100 custom-form-container">
   <div class="w-100" style="max-width: 600px; padding-top: 20px;">
-    <h1 class="text-center my-4">Registration Form</h1>
+    <h1 class="text-center my-4">{{ _("Registration Form") }}</h1>
     <form method="POST">
       {{ form.hidden_tag() }}
 
       <div class="mb-3">
-        {{ form.first_name.label(class="form-label") }}
-        {{ form.first_name(class="form-control", placeholder="Enter your first name", autocomplete="off") }}
+        {{ form.first_name.label(class="form-label", text=_("First Name")) }}
+        {{ form.first_name(class="form-control", placeholder=_("Enter your first name"), autocomplete="off") }}
       </div>
 
       <div class="mb-3">
-        {{ form.last_name.label(class="form-label") }}
-        {{ form.last_name(class="form-control", placeholder="Enter your last name", autocomplete="off") }}
+        {{ form.last_name.label(class="form-label", text=_("Last Name")) }}
+        {{ form.last_name(class="form-control", placeholder=_("Enter your last name"), autocomplete="off") }}
       </div>
 
       <div class="mb-3">
-        {{ form.email.label(class="form-label") }}
-        {{ form.email(class="form-control", placeholder="Enter your email address", autocomplete="off") }}
+        {{ form.email.label(class="form-label", text=_("Email")) }}
+        {{ form.email(class="form-control", placeholder=_("Enter your email address"), autocomplete="off") }}
       </div>
 
       <div class="mb-3">
-        {{ form.age.label(class="form-label") }}
-        {{ form.age(class="form-control", placeholder="Enter your age", autocomplete="off") }}
+        {{ form.age.label(class="form-label", text=_("Age")) }}
+        {{ form.age(class="form-control", placeholder=_("Enter your age"), autocomplete="off") }}
       </div>
 
       <div class="mb-3">
-        {{ form.phone.label(class="form-label") }}
-        {{ form.phone(class="form-control", placeholder="Enter your phone number", autocomplete="off") }}
+        {{ form.phone.label(class="form-label", text=_("Phone Number")) }}
+        {{ form.phone(class="form-control", placeholder=_("Enter your phone number"), autocomplete="off") }}
       </div>
 
       <div class="mb-3">
-        {{ form.academic_level.label(class="form-label") }}
+        {{ form.academic_level.label(class="form-label", text=_("Academic Level")) }}
         {{ form.academic_level(class="form-select") }}
         {% for error in form.academic_level.errors %}
-          <div class="text-danger">{{ error }}</div>
+          <div class="text-danger">{{ _(error) }}</div>
         {% endfor %}
       </div>
 
       <div class="mb-3">
-        {{ form.how_heard.label(class="form-label") }}
+        {{ form.how_heard.label(class="form-label", text=_("How did you hear about us?")) }}
         {{ form.how_heard(class="form-select") }}
         {% for error in form.how_heard.errors %}
-          <div class="text-danger">{{ error }}</div>
+          <div class="text-danger">{{ _(error) }}</div>
         {% endfor %}
       </div>
 
       <div class="mb-3">
-        {{ form.availability_time.label(class="form-label") }}
-        {{ form.availability_time(class="form-control", placeholder="YYYY-MM-DD", autocomplete="off") }}
+        {{ form.availability_time.label(class="form-label", text=_("Availability Date")) }}
+        {{ form.availability_time(class="form-control", placeholder=_("YYYY-MM-DD"), autocomplete="off") }}
       </div>
 
       <div class="mb-3 text-center">
-        {{ form.submit(class="btn btn-primary") }}
+        {{ form.submit(class="btn btn-primary", value=_("Register")) }}
       </div>
     </form>
   </div>

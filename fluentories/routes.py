@@ -1,4 +1,4 @@
-from flask import Blueprint, request, redirect, url_for, flash, render_template
+from flask import Blueprint, request, redirect, url_for, flash, render_template, session, current_app
 from fluentories import db
 from fluentories.forms.appointment_form import AppointmentForm
 from fluentories.forms.register_form import RegisterForm
@@ -103,3 +103,9 @@ def register():
 
     registrations = Registeration.query.all()
     return render_template('register.html', form=form, registrations=registrations)
+
+@routes.route('/change_lang/<lang_code>')
+def change_lang(lang_code):
+    if lang_code in current_app.config['BABEL_SUPPORTED_LOCALES']:
+        session['lang'] = lang_code
+    return redirect(request.referrer or url_for('core.index'))    
